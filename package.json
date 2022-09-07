@@ -12,5 +12,8 @@
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js"
+    },
+    "dependencies": {
+        "twilio": "^3.81.0"
     }
 }
