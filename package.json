@@ -8,12 +8,15 @@
         "@wdio/local-runner": "^7.24.0",
         "@wdio/mocha-framework": "^7.24.0",
         "chromedriver": "^105.0.0",
+        "gmail-tester-extended": "^1.1.2",
         "wdio-chromedriver-service": "^7.3.2"
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js"
     },
     "dependencies": {
+        "cheerio": "^1.0.0-rc.12",
+        "nodemailer": "^6.7.8",
         "twilio": "^3.81.0"
     }
 }
