@@ -12,8 +12,9 @@ class GmailApi {
         subject: subject,
       }
     );
+    console.log(messages[0].body.html);
     let message = cheerio
-      .load(await messages[0].body.html)("h1.verificationCode")
+      .load(messages[0].body.html)("h1.verificationCode")
       .text();
     console.log(message);
     return message;

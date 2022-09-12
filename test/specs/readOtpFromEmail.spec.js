@@ -2,9 +2,10 @@ const gmailApi = require("../../helpers/gmailApi");
 
 const signupPage = require("../pageobjects/signup.page");
 describe("Read OTP", async function () {
-  it("", async function () {
-    this.timeout(200000000);
+  it("SingUp Flow", async function () {
+    this.timeout(120000);
     const email = signupPage.createEmail();
+    console.log(email);
     await signupPage.createAccountBtn.click();
     await signupPage.inputEmail.waitForDisplayed();
     await signupPage.inputEmail.setValue(email);

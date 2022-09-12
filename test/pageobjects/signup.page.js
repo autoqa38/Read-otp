@@ -77,7 +77,7 @@ class SignupPage extends Page {
     for (let i = 0; i < 5; i++) {
       email += chars[Math.floor(Math.random() * chars.length)];
     }
-    email = "autoqa38" + email + "@gmail.com";
+    email = "autoqa38+" + email + "@gmail.com";
     return email;
   }
 }
