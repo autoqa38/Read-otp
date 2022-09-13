@@ -1,5 +1,5 @@
 const cheerio = require("cheerio");
-const gmail = require("gmail-tester-extended");
+const gmail = require("gmail-tester");
 class GmailApi {
   async getCode(email, subject) {
     const messages = await gmail.get_messages(

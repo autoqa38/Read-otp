@@ -1,5 +1,4 @@
 const Page = require("./page");
-const gmail = require("gmail-tester-extended");
 
 class SignupPage extends Page {
   get createAccountBtn() {
