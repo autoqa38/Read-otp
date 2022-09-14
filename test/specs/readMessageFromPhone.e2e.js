@@ -2,7 +2,7 @@ const LoginPage = require('../pageobjects/login.page');
 const submissionPage = require('../pageobjects/submission.page')
 
 const accountSid = 'AC13fb4ed9a621140e19581a14472a75b0'
-const authToken = '86cfaaa8ed9be20c65ad281789b229d7'
+const authToken = '074e90fe160216e2f54f84b186043e39'
 const client = require('twilio')(accountSid, authToken)
 
 

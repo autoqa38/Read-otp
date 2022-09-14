@@ -1,7 +1,7 @@
 const gmailApi = require("../../helpers/gmailApi");
 
 const signupPage = require("../pageobjects/signup.page");
-describe("Read OTP", async function () {
+describe("Read OTP From Email", async function () {
   it("SignUp Flow", async function () {
     this.timeout(120000);
     const email = signupPage.createEmail();
