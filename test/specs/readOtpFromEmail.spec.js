@@ -1,8 +1,9 @@
 const gmailApi = require("../../helpers/gmailApi");
+const loginPage = require("../pageobjects/login.page");
 
 const signupPage = require("../pageobjects/signup.page");
-describe("Read OTP From Email", async function () {
-  it("SignUp Flow", async function () {
+describe("Read Email From Gmail", async function () {
+  it.only("SignUp Flow", async function () {
     this.timeout(120000);
     const email = signupPage.createEmail();
     console.log(email);
@@ -28,6 +29,7 @@ describe("Read OTP From Email", async function () {
     await signupPage.checkYourEmail.waitForDisplayed();
     await browser.pause(2000);
     const code = await gmailApi.getCode(
+      "no-reply@nile.ai",
       email,
       "[Action needed] Please verify with Nile"
     );
