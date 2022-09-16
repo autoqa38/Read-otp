@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[contains(@class,\"accordion__content expanded\")]//button[text()=\"Next\"]"
+}
