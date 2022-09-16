@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class='chip__body' and text()='Broken Street 2']"
+}
